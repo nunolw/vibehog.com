@@ -127,7 +127,7 @@ export default function Home() {
               </div>
               <div className="flex-1">
                 <Image
-                  src="/vibehog.com/10products.jpg"
+                  src="/10products.jpg"
                   alt="10+ products in one platform"
                   width={400}
                   height={300}
@@ -245,7 +245,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
                   <Image 
-                    src="/vibehog.com/rich1.jpg"
+                    src="/rich1.jpg"
                     alt="Rich Feature 1"
                     width={400}
                     height={300}
@@ -258,7 +258,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
                   <Image 
-                    src="/vibehog.com/rich2.jpg"
+                    src="/rich2.jpg"
                     alt="Rich Feature 2"
                     width={400}
                     height={300}
@@ -271,7 +271,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
                   <Image 
-                    src="/vibehog.com/rich3.jpg"
+                    src="/rich3.jpg"
                     alt="Rich Feature 3"
                     width={400}
                     height={300}
@@ -510,31 +510,31 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                     bg: 'bg-gradient-to-br from-white to-purple-50 border-purple-100',
                     title: "You like to find PMF slowly",
                     description: "VibeHog will help you find it fast, use with caution.",
-                    image: "/vibehog.com/slow.jpg"
+                    image: "/slow.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-pink-50 border-pink-100',
                     title: "You love opening 10 tabs instead of one",
                     description: "VibeHog does web analytics, product insights, session replays, and more — all in one tab.",
-                    image: "/vibehog.com/tabs.jpg"
+                    image: "/tabs.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-indigo-50 border-indigo-100',
                     title: "You collect analytics tools like NFTs",
                     description: "No need to hire consultants to setup mixpanel, google analytics, amplitude and 1000 more tools. VibeHog takes one minute to set up, by you.",
-                    image: "/vibehog.com/nfts.jpg"
+                    image: "/nfts.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-purple-50 border-purple-100',
                     title: "You're a part-time data sherlock holmes",
                     description: "You don't need to decipher a thousand plots to know what your customers want like they are ancient scrolls, VibeHog does everything for you.",
-                    image: "/vibehog.com/sherlock.jpg"
+                    image: "/sherlock.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-pink-50 border-pink-100',
                     title: "You like complex and long setups",
                     description: "Our setup is so simple it might hurt your feelings. One line of code and you're done.",
-                    image: "/vibehog.com/complex.jpg"
+                    image: "/complex.jpg"
                   }
                 ].map((warning, index) => (
                   <div
@@ -637,7 +637,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
                     <Image 
-                      src="/vibehog.com/rich1.jpg"
+                      src="/rich1.jpg"
                       alt="Rich Feature 1"
                       width={400}
                       height={300}
@@ -650,7 +650,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
                     <Image 
-                      src="/vibehog.com/rich2.jpg"
+                      src="/rich2.jpg"
                       alt="Rich Feature 2"
                       width={400}
                       height={300}
@@ -663,7 +663,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
                     <Image 
-                      src="/vibehog.com/rich3.jpg"
+                      src="/rich3.jpg"
                       alt="Rich Feature 3"
                       width={400}
                       height={300}
@@ -799,7 +799,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8">
                     <div className="aspect-square relative">
                       <Image 
-                        src="/vibehog.com/punchcard.jpg" 
+                        src="/punchcard.jpg" 
                         alt="VibeHog Punchcard"
                         width={400}
                         height={400}
