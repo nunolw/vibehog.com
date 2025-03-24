@@ -5,6 +5,7 @@ const nextConfig = {
   assetPrefix: '/vibehog.com/',
   images: {
     unoptimized: true,
+    path: '/vibehog.com'
   },
 }
 
