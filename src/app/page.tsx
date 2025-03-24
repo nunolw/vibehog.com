@@ -510,31 +510,31 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                     bg: 'bg-gradient-to-br from-white to-purple-50 border-purple-100',
                     title: "You like to find PMF slowly",
                     description: "VibeHog will help you find it fast, use with caution.",
-                    image: "/slow.jpg"
+                    image: "/vibehog.com/slow.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-pink-50 border-pink-100',
                     title: "You love opening 10 tabs instead of one",
                     description: "VibeHog does web analytics, product insights, session replays, and more — all in one tab.",
-                    image: "/tabs.jpg"
+                    image: "/vibehog.com/tabs.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-indigo-50 border-indigo-100',
                     title: "You collect analytics tools like NFTs",
                     description: "No need to hire consultants to setup mixpanel, google analytics, amplitude and 1000 more tools. VibeHog takes one minute to set up, by you.",
-                    image: "/nfts.jpg"
+                    image: "/vibehog.com/nfts.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-purple-50 border-purple-100',
                     title: "You're a part-time data sherlock holmes",
                     description: "You don't need to decipher a thousand plots to know what your customers want like they are ancient scrolls, VibeHog does everything for you.",
-                    image: "/sherlock.jpg"
+                    image: "/vibehog.com/sherlock.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-pink-50 border-pink-100',
                     title: "You like complex and long setups",
                     description: "Our setup is so simple it might hurt your feelings. One line of code and you're done.",
-                    image: "/complex.jpg"
+                    image: "/vibehog.com/complex.jpg"
                   }
                 ].map((warning, index) => (
                   <div
