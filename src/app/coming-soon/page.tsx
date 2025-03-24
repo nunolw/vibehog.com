@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function ComingSoon() {
   const [email, setEmail] = useState('')
@@ -10,6 +11,8 @@ export default function ComingSoon() {
     e.preventDefault()
     setSubmitted(true)
     setEmail('')
+    // Open mailto link
+    window.location.href = 'mailto:hi@hypersimple.ai?subject=Ready%20to%20Vibe!&body=Let&apos;s%20get%20vibing%20together!%20🎵'
   }
 
   return (
@@ -20,11 +23,12 @@ export default function ComingSoon() {
 
         <div className="relative">
           {/* Vibing Image */}
-          <div className="mb-12 w-32 h-32 mx-auto">
-            <img 
-              src="/vibing.jpeg"
+          <div className="mb-12 w-96 h-96 mx-auto overflow-hidden rounded-[2rem] relative">
+            <Image 
+              src="/vibing.jpg"
               alt="Still Vibing"
-              className="w-full h-full object-contain"
+              fill
+              className="object-cover"
             />
           </div>
 
@@ -36,34 +40,34 @@ export default function ComingSoon() {
           </h1>
 
           <p className="text-2xl text-gray-600 mb-12">
-            Sign up to get constant updates!
+            Sign up to get updates every 42 milliseconds!
           </p>
 
           {/* Email Form */}
-          <div className="max-w-md mx-auto">
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
             {!submitted ? (
-              <form onSubmit={handleSubmit} className="flex gap-4 justify-center">
+              <div className="flex gap-4">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="w-96 px-6 py-4 rounded-full bg-gray-50 border border-gray-100 focus:outline-none focus:border-purple-200 transition-colors text-lg"
+                  className="flex-1 px-6 py-3 rounded-full border border-gray-200 focus:outline-none focus:border-purple-500"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-8 py-4 rounded-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white text-lg font-medium hover:opacity-90 transition-all"
+                  className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white font-medium hover:opacity-90 transition-all"
                 >
                   Subscribe
                 </button>
-              </form>
+              </div>
             ) : (
-              <div className="text-lg text-gray-600">
-                Thanks for subscribing! We'll keep you posted.
+              <div className="text-2xl text-green-600 font-medium">
+                Let&apos;s get vibing together! Check your email 🎵
               </div>
             )}
-          </div>
+          </form>
         </div>
       </div>
     </main>

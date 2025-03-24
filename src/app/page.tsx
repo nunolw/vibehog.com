@@ -626,8 +626,8 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                 </span>
                 , one use case
               </h2>
-              <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-                We're obsessed with helping you find product-market fit. And having fun while doing it.
+              <p className="text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                We&apos;re obsessed with helping you find product-market fit. And having fun while doing it.
                 And then finding product-market fit again.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -815,7 +815,9 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                       <span className="mr-1.5">😎</span> EGO-FRIENDLY
                     </span>
                   </div>
-                  <p className="text-gray-600 mb-8">Punch card shipment*</p>
+                  <p className="text-gray-600 mb-8">
+                    Don&apos;t worry, we&apos;ll send you a punch card in the mail*.
+                  </p>
 
                   {/* Cloud Selection */}
                   <div className="mb-8">
