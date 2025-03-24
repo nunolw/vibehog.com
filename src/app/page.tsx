@@ -544,9 +544,11 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                     <div>
                       <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent leading-tight">{warning.title}</h3>
                       <div className="mb-6 overflow-hidden rounded-lg">
-                        <Image 
-                          src={warning.image} 
+                        <Image
+                          src={warning.image}
                           alt={warning.title}
+                          width={48}
+                          height={48}
                           className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </div>

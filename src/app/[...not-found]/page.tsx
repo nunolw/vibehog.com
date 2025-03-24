@@ -23,12 +23,13 @@ export default function NotFoundCatchAll() {
 
         <div className="relative">
           {/* Vibing Image */}
-          <div className="mb-12 w-96 h-96 mx-auto overflow-hidden rounded-[2rem] relative">
+          <div className="mb-12 w-96 h-96 mx-auto overflow-hidden rounded-[2rem]">
             <Image 
               src="/vibing.jpg"
               alt="Still Vibing"
-              fill
-              className="object-cover"
+              width={384}
+              height={384}
+              className="w-full h-full object-cover"
             />
           </div>
 
