@@ -27,8 +27,9 @@ export default function ComingSoon() {
             <Image 
               src="/vibing.jpg"
               alt="Still Vibing"
-              fill
-              className="object-cover"
+              width={384}
+              height={384}
+              className="w-full h-full object-cover"
             />
           </div>
 
