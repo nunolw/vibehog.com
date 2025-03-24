@@ -127,7 +127,7 @@ export default function Home() {
               </div>
               <div className="flex-1">
                 <Image
-                  src="/10products.jpg"
+                  src="/vibehog.com/10products.jpg"
                   alt="10+ products in one platform"
                   width={400}
                   height={300}
@@ -245,7 +245,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
                   <Image 
-                    src="/rich1.jpg"
+                    src="/vibehog.com/rich1.jpg"
                     alt="Rich Feature 1"
                     width={400}
                     height={300}
@@ -258,7 +258,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
                   <Image 
-                    src="/rich2.jpg"
+                    src="/vibehog.com/rich2.jpg"
                     alt="Rich Feature 2"
                     width={400}
                     height={300}
@@ -271,7 +271,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
                   <Image 
-                    src="/rich3.jpg"
+                    src="/vibehog.com/rich3.jpg"
                     alt="Rich Feature 3"
                     width={400}
                     height={300}
@@ -637,7 +637,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
                     <Image 
-                      src="/rich1.jpg"
+                      src="/vibehog.com/rich1.jpg"
                       alt="Rich Feature 1"
                       width={400}
                       height={300}
@@ -650,7 +650,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
                     <Image 
-                      src="/rich2.jpg"
+                      src="/vibehog.com/rich2.jpg"
                       alt="Rich Feature 2"
                       width={400}
                       height={300}
@@ -663,7 +663,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
                     <Image 
-                      src="/rich3.jpg"
+                      src="/vibehog.com/rich3.jpg"
                       alt="Rich Feature 3"
                       width={400}
                       height={300}
@@ -799,7 +799,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8">
                     <div className="aspect-square relative">
                       <Image 
-                        src="/punchcard.jpg" 
+                        src="/vibehog.com/punchcard.jpg" 
                         alt="VibeHog Punchcard"
                         width={400}
                         height={400}

@@ -7,7 +7,7 @@ export default function NotFound() {
         <div className="text-center">
           <div className="mb-12 w-96 h-96 mx-auto overflow-hidden rounded-[2rem]">
             <Image 
-              src="/vibing.jpg"
+              src="/vibehog.com/vibing.jpg"
               alt="Still Vibing"
               width={384}
               height={384}
