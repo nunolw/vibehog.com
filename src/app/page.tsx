@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   const [selectedCloud, setSelectedCloud] = useState('just')
@@ -84,7 +85,7 @@ export default function Home() {
                 'Trust',
                 'ResearchGate',
                 'PostHog'
-              ].map((company, index) => (
+              ].map((company) => (
                 <div
                   key={company}
                   className="aspect-[3/2] relative group overflow-hidden"
@@ -125,9 +126,11 @@ export default function Home() {
                 </Link>
               </div>
               <div className="flex-1">
-                <img
+                <Image
                   src="/10products.jpg"
                   alt="10+ products in one platform"
+                  width={400}
+                  height={300}
                   className="w-full rounded-2xl shadow-2xl"
                 />
               </div>
@@ -173,7 +176,7 @@ export default function Home() {
                   {
                     date: 'Lunchtime',
                     title: 'Hit $100M ARR',
-                    description: 'Turns out people really like analytics that don\'t make them cry.',
+                    description: 'Turns out people really like analytics that don&apos;t make them cry.',
                     gradient: 'from-pink-500 to-indigo-600'
                   },
                   {
@@ -241,10 +244,12 @@ export default function Home() {
               <div className="p-8 rounded-xl bg-gradient-to-br from-white to-indigo-50 border border-indigo-100 hover:shadow-xl transition-all group">
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
-                  <img 
-                    src="/rich1.jpg" 
-                    alt="Product-Market Fit"
-                    className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                  <Image 
+                    src="/rich1.jpg"
+                    alt="Rich Feature 1"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <p className="text-gray-600 text-lg">Track what matters, understand your users, and iterate until they can't live without your product</p>
@@ -252,10 +257,12 @@ export default function Home() {
               <div className="p-8 rounded-xl bg-gradient-to-br from-white to-purple-50 border border-purple-100 hover:shadow-xl transition-all group">
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
-                  <img 
-                    src="/rich2.jpg" 
-                    alt="Product-Market Fit"
-                    className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                  <Image 
+                    src="/rich2.jpg"
+                    alt="Rich Feature 2"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <p className="text-gray-600 text-lg">Because finding PMF once is not enough. We help you do it again and again!</p>
@@ -263,10 +270,12 @@ export default function Home() {
               <div className="p-8 rounded-xl bg-gradient-to-br from-white to-pink-50 border border-pink-100 hover:shadow-xl transition-all group">
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                 <div className="mb-6 overflow-hidden rounded-lg">
-                  <img 
-                    src="/rich3.jpg" 
-                    alt="Product-Market Fit"
-                    className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                  <Image 
+                    src="/rich3.jpg"
+                    alt="Rich Feature 3"
+                    width={400}
+                    height={300}
+                    className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
                 <p className="text-gray-600 text-lg">Did we mention we're obsessed with helping you find product-market fit? Because we are.</p>
@@ -535,7 +544,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                     <div>
                       <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent leading-tight">{warning.title}</h3>
                       <div className="mb-6 overflow-hidden rounded-lg">
-                        <img 
+                        <Image 
                           src={warning.image} 
                           alt={warning.title}
                           className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
@@ -625,10 +634,12 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                 <div className="p-8 rounded-xl bg-gradient-to-br from-white to-indigo-50 border border-indigo-100 hover:shadow-xl transition-all group">
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
-                    <img 
-                      src="/rich1.jpg" 
-                      alt="Product-Market Fit"
-                      className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                    <Image 
+                      src="/rich1.jpg"
+                      alt="Rich Feature 1"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover rounded-lg"
                     />
                   </div>
                   <p className="text-gray-600 text-lg">Track what matters, understand your users, and iterate until they can't live without your product</p>
@@ -636,10 +647,12 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                 <div className="p-8 rounded-xl bg-gradient-to-br from-white to-purple-50 border border-purple-100 hover:shadow-xl transition-all group">
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
-                    <img 
-                      src="/rich2.jpg" 
-                      alt="Product-Market Fit"
-                      className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                    <Image 
+                      src="/rich2.jpg"
+                      alt="Rich Feature 2"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover rounded-lg"
                     />
                   </div>
                   <p className="text-gray-600 text-lg">Because finding PMF once is not enough. We help you do it again and again!</p>
@@ -647,10 +660,12 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                 <div className="p-8 rounded-xl bg-gradient-to-br from-white to-pink-50 border border-pink-100 hover:shadow-xl transition-all group">
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
-                    <img 
-                      src="/rich3.jpg" 
-                      alt="Product-Market Fit"
-                      className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                    <Image 
+                      src="/rich3.jpg"
+                      alt="Rich Feature 3"
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover rounded-lg"
                     />
                   </div>
                   <p className="text-gray-600 text-lg">Did we mention we're obsessed with helping you find product-market fit? Because we are.</p>
@@ -781,9 +796,11 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   {/* Product Image */}
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8">
                     <div className="aspect-square relative">
-                      <img 
+                      <Image 
                         src="/punchcard.jpg" 
                         alt="VibeHog Punchcard"
+                        width={400}
+                        height={400}
                         className="w-full h-full object-cover rounded-lg"
                       />
                     </div>
@@ -886,7 +903,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   <li><Link href="/vibehog-vs" className="text-gray-600 hover:text-purple-600">VibeHog vs...</Link></li>
                   <li><Link href="/for-startups" className="text-gray-600 hover:text-purple-600">For startups</Link></li>
                   <li><Link href="/pricing" className="text-gray-600 hover:text-purple-600">Pricing</Link></li>
-                  <li><Link href="/how-we-do-sales" className="text-gray-600 hover:text-purple-600">How we do "sales"</Link></li>
+                  <li><Link href="/how-we-do-sales" className="text-gray-600 hover:text-purple-600">How we do &quot;sales&quot;</Link></li>
                   <li><Link href="/founder-stack" className="text-gray-600 hover:text-purple-600">Founder stack</Link></li>
                 </ul>
               </div>
