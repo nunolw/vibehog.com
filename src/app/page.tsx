@@ -102,16 +102,17 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             {/* Phone Frame Side */}
-            <div className="relative mx-auto max-w-[350px]">
-              <div className="relative">
+            <div className="relative mx-auto max-w-[350px] transform perspective-1000">
+              <div className="relative" style={{ filter: 'drop-shadow(0 35px 35px rgba(0, 0, 0, 0.3))' }}>
         <Image
                   src="/phoneframe.png"
                   alt="Phone Frame"
                   width={350}
-                  height={783}
+                  height={934}
                   className="w-full h-auto"
+                  style={{ transform: 'rotate(-2deg)' }}
                 />
-                <div className="absolute inset-[3%] rounded-[35px] overflow-hidden">
+                <div className="absolute inset-[3%] rounded-[35px] overflow-hidden" style={{ transform: 'rotate(-2deg)' }}>
                   <div className="relative w-full h-full bg-black">
                     {/* Apple-style navigation bar */}
                     <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-4 py-2 bg-black/80 backdrop-blur-sm z-10">
@@ -131,25 +132,26 @@ export default function Home() {
 
                     {/* Content Container */}
                     <div className="relative w-full h-full flex flex-col">
-                      {/* Background Image */}
+                      {/* Background Image - Increased height for taller aspect ratio */}
                       <div className="flex-1 relative">
             <Image
                           src="/hogphone.jpg"
                           alt="HogPhone Pro"
                           fill
                           className="object-cover"
+                          style={{ objectPosition: 'center top' }}
                         />
                       </div>
 
-                      {/* Text Content */}
-                      <div className="relative z-10 bg-black p-8">
-                        <h2 className="text-4xl font-medium mb-2 text-white text-center">HogPhone Pro</h2>
-                        <p className="text-xl text-gray-300 mb-8 text-center">Hello Hog Intelligence.</p>
-                        <div className="flex justify-center gap-4">
-                          <Link href="/coming-soon" className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:opacity-90">
+                      {/* Text Content - Adjusted for the slightly reduced phone size */}
+                      <div className="relative z-10 bg-black p-7">
+                        <h2 className="text-3xl font-medium mb-2 text-white text-center">HogPhone Pro</h2>
+                        <p className="text-lg text-gray-300 mb-6 text-center">Hello Hog Intelligence.</p>
+                        <div className="flex justify-center gap-3">
+                          <Link href="/coming-soon" className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-90">
                             Learn more
                           </Link>
-                          <Link href="/coming-soon" className="border border-[#0066CC] bg-gradient-to-r from-indigo-600/10 via-purple-600/10 to-pink-500/10 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-indigo-600 hover:via-purple-600 hover:to-pink-500 transition-all">
+                          <Link href="/coming-soon" className="border border-[#0066CC] bg-gradient-to-r from-indigo-600/10 via-purple-600/10 to-pink-500/10 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-indigo-600 hover:via-purple-600 hover:to-pink-500 transition-all">
                             Buy
                           </Link>
                         </div>
@@ -162,67 +164,64 @@ export default function Home() {
 
             {/* SDKs Content Side */}
             <div className="space-y-12">
-              {/* Web Frontend */}
+              {/* Web */}
               <div>
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
-                  Web Frontend
+                <h3 className="text-[2.2rem] font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                  Web
                 </h3>
-                <p className="text-gray-600 mb-6">Use autocapture to collect client-side events without any special instrumentation.</p>
                 <div className="flex overflow-x-auto pb-2 gap-4">
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     JavaScript
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     React
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     Next.js
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     Vue
                   </button>
                 </div>
               </div>
 
-              {/* Server Libraries */}
+              {/* Server */}
               <div>
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
-                  Server Libraries
+                <h3 className="text-[2.2rem] font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                  Server
                 </h3>
-                <p className="text-gray-600 mb-6">Capture server-side events - best used in conjunction with a frontend web library</p>
                 <div className="flex overflow-x-auto pb-2 gap-4">
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     Node.js
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     Python
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     Ruby
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     .NET
                   </button>
                 </div>
               </div>
 
-              {/* Mobile Libraries */}
+              {/* Mobile */}
               <div>
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
-                  Mobile Libraries
+                <h3 className="text-[2.2rem] font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                  Mobile
                 </h3>
-                <p className="text-gray-600 mb-6">Send custom events and identify users. Record mobile sessions and use feature flags.</p>
                 <div className="flex overflow-x-auto pb-2 gap-4">
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     Android
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     iOS
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     React Native
                   </button>
-                  <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3 whitespace-nowrap text-black">
+                  <button className="text-left px-5 py-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-all flex items-center gap-3 whitespace-nowrap text-black font-medium">
                     Flutter
                   </button>
                 </div>
@@ -307,7 +306,7 @@ export default function Home() {
                   {
                     date: 'Yesterday',
                     title: 'Founded VibeHog',
-                    description: 'Started with a simple idea: analytics should spark joy ✨',
+                    description: 'Started with a simple idea: analytics should spark joy',
                     gradient: 'from-indigo-600 to-purple-600'
                   },
                   {
