@@ -37,7 +37,7 @@ export default function ComingSoon() {
             <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
               Still vibing hard
             </span>
-            {' '}on this page
+            <span className="text-black">{' '}on this page</span>
           </h1>
 
           <p className="text-2xl text-gray-600 mb-12">
@@ -53,7 +53,7 @@ export default function ComingSoon() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="flex-1 px-6 py-3 rounded-full border border-gray-200 focus:outline-none focus:border-purple-500"
+                  className="flex-1 px-6 py-3 rounded-full border border-gray-200 focus:outline-none focus:border-purple-500 text-black placeholder-black"
                   required
                 />
                 <button

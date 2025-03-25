@@ -26,7 +26,7 @@ export function Navigation() {
               href="/coming-soon"
               className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white px-6 py-2 rounded-full font-medium transition-all hover:scale-105 hover:shadow-xl inline-flex items-center group"
             >
-              VibeBoard
+              Get Started
               <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
             </Link>
           </div>
