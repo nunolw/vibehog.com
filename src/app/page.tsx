@@ -138,6 +138,161 @@ export default function Home() {
           </div>
         </div>
 
+        {/* SDKs Section */}
+        <div className="mt-32 relative">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            SDKs for <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">web</span> and <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">mobile</span>
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            {/* Phone Frame Side */}
+            <div className="relative mx-auto max-w-[350px]">
+              <div className="relative">
+                <Image
+                  src="/phoneframe.png"
+                  alt="Phone Frame"
+                  width={350}
+                  height={712}
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-[3%] rounded-[35px] overflow-hidden">
+                  <div className="relative w-full h-full bg-black">
+                    {/* Apple-style navigation bar */}
+                    <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-4 py-2 bg-black/80 backdrop-blur-sm z-10">
+                      <div className="w-5 h-5" />
+                      <div className="flex space-x-4">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Content Container */}
+                    <div className="relative w-full h-full flex flex-col">
+                      {/* Background Image */}
+                      <div className="flex-1 relative">
+                        <Image
+                          src="/hogphone.jpg"
+                          alt="HogPhone Pro"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+
+                      {/* Text Content */}
+                      <div className="relative z-10 bg-black p-8">
+                        <h2 className="text-4xl font-medium mb-2 text-white text-center">HogPhone Pro</h2>
+                        <p className="text-xl text-gray-300 mb-8 text-center">Hello Hog Intelligence.</p>
+                        <div className="flex justify-center gap-4">
+                          <Link href="/coming-soon" className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:opacity-90">
+                            Learn more
+                          </Link>
+                          <Link href="/coming-soon" className="border border-[#0066CC] bg-gradient-to-r from-indigo-600/10 via-purple-600/10 to-pink-500/10 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-indigo-600 hover:via-purple-600 hover:to-pink-500 transition-all">
+                            Buy
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* SDKs Content Side */}
+            <div className="space-y-12">
+              {/* Web Frontend */}
+              <div>
+                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                  Web Frontend
+                </h3>
+                <p className="text-gray-600 mb-6">Use autocapture to collect client-side events without any special instrumentation.</p>
+                <div className="space-y-4">
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">⚡</span>
+                    JavaScript
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">⚛️</span>
+                    React
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">▲</span>
+                    Next.js
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">💚</span>
+                    Vue
+                  </button>
+                </div>
+              </div>
+
+              {/* Server Libraries */}
+              <div>
+                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                  Server Libraries
+                </h3>
+                <p className="text-gray-600 mb-6">Capture server-side events - best used in conjunction with a frontend web library</p>
+                <div className="space-y-4">
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">🟢</span>
+                    Node.js
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">🐍</span>
+                    Python
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">💎</span>
+                    Ruby
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">🎯</span>
+                    .NET
+                  </button>
+                </div>
+              </div>
+
+              {/* Mobile Libraries */}
+              <div>
+                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                  Mobile Libraries
+                </h3>
+                <p className="text-gray-600 mb-6">Send custom events and identify users. Record mobile sessions and use feature flags.</p>
+                <div className="space-y-4">
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">🤖</span>
+                    Android
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">🍎</span>
+                    iOS
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">⚛️</span>
+                    React Native
+                  </button>
+                  <button className="w-full text-left px-4 py-2 rounded-lg hover:bg-gray-50 transition-all flex items-center gap-3">
+                    <span className="text-xl">🎯</span>
+                    Flutter
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link href="/coming-soon" className="text-lg text-gray-600 hover:text-gray-900 transition-colors">
+              Browse all libraries ›
+            </Link>
+          </div>
+        </div>
+
         {/* Ship Fast Timeline Section */}
         <div className="mt-32 relative w-screen left-[50%] right-[50%] ml-[-50vw] mr-[-50vw]">
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50"></div>
@@ -230,191 +385,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Product Features Grid */}
-        <div className="mt-32 relative w-screen left-[50%] right-[50%] ml-[-50vw] mr-[-50vw]">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 transform -skew-y-3"></div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <h2 className="text-5xl font-bold text-center mb-16">
-              <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
-                One platform
-              </span>
-              , one use case
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-8 rounded-xl bg-gradient-to-br from-white to-indigo-50 border border-indigo-100 hover:shadow-xl transition-all group">
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
-                <div className="mb-6 overflow-hidden rounded-lg">
-                  <Image 
-                    src="/rich1.jpg"
-                    alt="Rich Feature 1"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <p className="text-gray-600 text-lg">Track what matters, understand your users, and iterate until they can't live without your product</p>
-              </div>
-              <div className="p-8 rounded-xl bg-gradient-to-br from-white to-purple-50 border border-purple-100 hover:shadow-xl transition-all group">
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
-                <div className="mb-6 overflow-hidden rounded-lg">
-                  <Image 
-                    src="/rich2.jpg"
-                    alt="Rich Feature 2"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <p className="text-gray-600 text-lg">Because finding PMF once is not enough. We help you do it again and again!</p>
-              </div>
-              <div className="p-8 rounded-xl bg-gradient-to-br from-white to-pink-50 border border-pink-100 hover:shadow-xl transition-all group">
-                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
-                <div className="mb-6 overflow-hidden rounded-lg">
-                  <Image 
-                    src="/rich3.jpg"
-                    alt="Rich Feature 3"
-                    width={400}
-                    height={300}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                </div>
-                <p className="text-gray-600 text-lg">Did we mention we're obsessed with helping you find product-market fit? Because we are.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* SDKs Section */}
-        <div className="mt-32 relative">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div className="flex flex-col lg:flex-row gap-16 items-center">
-              <div className="flex-1">
-                <h2 className="text-5xl font-bold mb-8">
-                  SDKs for <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">every platform</span>
-                </h2>
-
-                {/* Web Frontend */}
-                <div className="mb-12">
-                  <h3 className="text-2xl font-semibold mb-4">Web (frontend)</h3>
-                  <p className="text-gray-600 mb-6">Use autocapture to collect client-side events without any special instrumentation.</p>
-                  <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-yellow-50 rounded-lg border border-yellow-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white rounded">JS</div>
-                      <span className="text-gray-700">JavaScript</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-blue-50 rounded-lg border border-blue-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-blue-400 text-white rounded">Re</div>
-                      <span className="text-gray-700">React</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-gray-50 rounded-lg border border-gray-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-black text-white rounded">N</div>
-                      <span className="text-gray-700">Next.js</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-green-50 rounded-lg border border-green-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-green-500 text-white rounded">V</div>
-                      <span className="text-gray-700">Vue</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Server Libraries */}
-                <div className="mb-12">
-                  <h3 className="text-2xl font-semibold mb-4">Server-side libraries</h3>
-                  <p className="text-gray-600 mb-6">Capture server-side events and combine them with client-side data</p>
-                  <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-green-50 rounded-lg border border-green-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-green-600 text-white rounded">
-                        <span className="text-sm">Node</span>
-                      </div>
-                      <span className="text-gray-700">Node.js</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-blue-50 rounded-lg border border-blue-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded">Py</div>
-                      <span className="text-gray-700">Python</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-red-50 rounded-lg border border-red-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-red-500 text-white rounded">Rb</div>
-                      <span className="text-gray-700">Ruby</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-purple-50 rounded-lg border border-purple-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-purple-600 text-white rounded">.N</div>
-                      <span className="text-gray-700">.NET</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mobile Libraries */}
-                <div>
-                  <h3 className="text-2xl font-semibold mb-4">Mobile libraries</h3>
-                  <p className="text-gray-600 mb-6">Track events and user behavior in your mobile applications</p>
-                  <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-green-50 rounded-lg border border-green-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-green-500 text-white rounded">An</div>
-                      <span className="text-gray-700">Android</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-gray-50 rounded-lg border border-gray-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-black text-white rounded">iOS</div>
-                      <span className="text-gray-700">iOS</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-blue-50 rounded-lg border border-blue-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-blue-400 text-white rounded">RN</div>
-                      <span className="text-gray-700">React Native</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-white to-blue-50 rounded-lg border border-blue-100">
-                      <div className="w-8 h-8 flex items-center justify-center bg-blue-500 text-white rounded">Fl</div>
-                      <span className="text-gray-700">Flutter</span>
-                    </div>
-                  </div>
-                </div>
-
-                <Link
-                  href="/docs/sdks"
-                  className="inline-flex items-center px-6 py-3 mt-8 rounded-full text-lg font-medium border border-purple-200 hover:border-purple-300 hover:bg-purple-50 transition-all group"
-                >
-                  Browse all libraries
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
-                </Link>
-              </div>
-
-              {/* Code Preview */}
-              <div className="lg:flex-1">
-                <div className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
-                  <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-800">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  </div>
-                  <div className="p-6">
-                    <pre className="text-sm font-mono text-gray-300">
-                      <code>{`import { vibehog } from '@vibehog/react'
-
-// Automatically capture page views
-vibehog.pageview()
-
-// Track custom events
-vibehog.capture('feature_used', {
-  name: 'dark_mode',
-  enabled: true
-})
-
-// Identify users
-vibehog.identify('user_123', {
-  name: 'Jane Doe',
-  plan: 'pro'
-})
-
-// Feature flags
-if (vibehog.isFeatureEnabled('new_dashboard')) {
-  showNewDashboard()
-}`}</code>
-                    </pre>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Code Examples Section */}
         <div className="mt-32 relative bg-gradient-to-b from-gray-50 to-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -472,7 +442,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
   },
   "timestamp": "2024-03-15T10:30:00.000Z"
 }`}
-                    </code>
+            </code>
                   </pre>
                 </div>
                 <div className="p-6">
@@ -544,7 +514,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                     <div>
                       <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent leading-tight">{warning.title}</h3>
                       <div className="mb-6 overflow-hidden rounded-lg">
-                        <Image
+            <Image
                           src={warning.image}
                           alt={warning.title}
                           width={48}
@@ -649,7 +619,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                 <div className="p-8 rounded-xl bg-gradient-to-br from-white to-purple-50 border border-purple-100 hover:shadow-xl transition-all group">
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
-                    <Image 
+          <Image
                       src="/rich2.jpg"
                       alt="Rich Feature 2"
                       width={400}
@@ -662,7 +632,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                 <div className="p-8 rounded-xl bg-gradient-to-br from-white to-pink-50 border border-pink-100 hover:shadow-xl transition-all group">
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Product-Market Fit</h3>
                   <div className="mb-6 overflow-hidden rounded-lg">
-                    <Image 
+          <Image
                       src="/rich3.jpg"
                       alt="Rich Feature 3"
                       width={400}
@@ -671,93 +641,6 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                     />
                   </div>
                   <p className="text-gray-600 text-lg">Did we mention we're obsessed with helping you find product-market fit? Because we are.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Startup Program Section */}
-        <div className="mt-32 relative">
-          {/* Background decoration */}
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 -skew-y-3 transform -mx-8 -my-16 rounded-3xl"></div>
-          
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              {/* Left side - Program details */}
-              <div>
-                <h2 className="text-4xl font-bold mb-6">
-                  Get to product market-fit with the{' '}
-                  <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">most popular analytics toolkit</span>
-                  {' '}used by vibe coders
-                </h2>
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4 group p-4 rounded-xl hover:bg-white/50 transition-all">
-                    <div className="text-2xl bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">✓</div>
-                    <div>
-                      <h3 className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent group-hover:from-purple-600 group-hover:to-pink-500 transition-all">Huuuuge free tier</h3>
-                      <p className="text-gray-600">30M events tracked + 50K recordings free, per month</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4 group p-4 rounded-xl hover:bg-white/50 transition-all">
-                    <div className="text-2xl bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">✓</div>
-                    <div>
-                      <h3 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent group-hover:from-pink-500 group-hover:to-indigo-600 transition-all">Exclusive founder merch</h3>
-                      <p className="text-gray-600">Now you can look as lit as our engineers</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4 group p-4 rounded-xl hover:bg-white/50 transition-all">
-                    <div className="text-2xl bg-gradient-to-r from-pink-500 to-indigo-600 bg-clip-text text-transparent">✓</div>
-                    <div>
-                      <h3 className="text-xl font-bold bg-gradient-to-r from-pink-500 to-indigo-600 bg-clip-text text-transparent group-hover:from-indigo-600 group-hover:to-purple-600 transition-all">Pre-product/market fit guides</h3>
-                      <p className="text-gray-600">We literally wrote a book on how to get product-market fit</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4 group p-4 rounded-xl hover:bg-white/50 transition-all">
-                    <div className="text-2xl bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">✓</div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">Used and recommended by vibe coders</span>
-                    </div>
-                  </div>
-                  <div className="mt-8">
-                    <Link
-                      href="/startup-program"
-                      className="inline-flex items-center px-6 py-3 rounded-full text-lg font-medium bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white hover:opacity-90 transition-all group"
-                    >
-                      Learn more
-                      <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right side - Testimonial */}
-              <div className="relative">
-                <div className="aspect-[16/10] bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 rounded-xl p-8 relative overflow-hidden group hover:shadow-xl transition-all">
-                  <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
-                  {/* Animated background circles */}
-                  <div className="absolute -right-20 -top-20 w-64 h-64 bg-white/10 rounded-full blur-xl animate-pulse"></div>
-                  <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-white/10 rounded-full blur-xl animate-pulse delay-700"></div>
-                  <div className="relative h-full flex flex-col text-white">
-                    <div className="flex-1">
-                      <p className="text-2xl font-bold mb-4">
-                        I am biased but I think{' '}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-pink-200">VibeHog is great.</span>
-                      </p>
-                      <p className="text-xl text-white/90">
-                        I talk to too many founders with half-implemented or disjointed tools that should just be using VibeHog.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-bold">Sarah Chen</div>
-                      <div className="text-sm text-white/80">Lead Developer & Vibe Master</div>
-                      <div className="flex items-center gap-2 mt-2">
-                        <div className="bg-white/20 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-sm font-medium">
-                          Vibe Coder
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -798,7 +681,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   {/* Product Image */}
                   <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8">
                     <div className="aspect-square relative">
-                      <Image 
+          <Image
                         src="/punchcard.jpg" 
                         alt="VibeHog Punchcard"
                         width={400}
@@ -1020,8 +903,8 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
               </div>
             </div>
           </div>
-        </footer>
-      </div>
+      </footer>
+    </div>
 
       <style jsx>{`
         @keyframes text {
