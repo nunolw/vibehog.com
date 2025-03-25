@@ -13,21 +13,21 @@ export function Navigation() {
               Vibehog
             </Link>
             <div className="hidden md:flex items-center gap-6">
-              <Link href="/why" className="text-gray-600 hover:text-purple-600 transition-colors">Why Vibehog?</Link>
-              <Link href="/products" className="text-gray-600 hover:text-purple-600 transition-colors">Products</Link>
-              <Link href="/pricing" className="text-gray-600 hover:text-purple-600 transition-colors">Pricing</Link>
-              <Link href="/docs" className="text-gray-600 hover:text-purple-600 transition-colors">Docs</Link>
-              <Link href="/community" className="text-gray-600 hover:text-purple-600 transition-colors">Community</Link>
-              <Link href="/company" className="text-gray-600 hover:text-purple-600 transition-colors">Company</Link>
+              <Link href="/coming-soon" className="text-gray-600 hover:text-purple-600 transition-colors">Why Vibehog?</Link>
+              <Link href="/coming-soon" className="text-gray-600 hover:text-purple-600 transition-colors">Products</Link>
+              <Link href="/coming-soon" className="text-gray-600 hover:text-purple-600 transition-colors">Pricing</Link>
+              <Link href="/coming-soon" className="text-gray-600 hover:text-purple-600 transition-colors">Docs</Link>
+              <Link href="/coming-soon" className="text-gray-600 hover:text-purple-600 transition-colors">Community</Link>
+              <Link href="/coming-soon" className="text-gray-600 hover:text-purple-600 transition-colors">Company</Link>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <Link
-              href="/dashboard"
+              href="/coming-soon"
               className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white px-6 py-2 rounded-full font-medium transition-all hover:scale-105 hover:shadow-xl inline-flex items-center group"
             >
               VibeBoard
-              <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+              <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
             </Link>
           </div>
         </div>

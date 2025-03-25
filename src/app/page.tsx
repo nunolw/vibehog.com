@@ -41,15 +41,15 @@ export default function Home() {
           </p>
           <div className="flex justify-center gap-6 mb-48">
             <Link
-              href="https://app.vibehog.com"
+              href="/coming-soon"
               className="inline-flex items-center px-8 py-4 rounded-full text-xl font-medium bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white hover:opacity-90 transition-all group"
             >
               Start vibing for free
-              <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+              <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
               <span className="ml-2 text-white font-bold">FREE</span>
             </Link>
             <Link
-              href="/chat"
+              href="/coming-soon"
               className="inline-flex items-center px-8 py-4 rounded-full text-xl font-medium bg-white text-gray-900 hover:bg-gray-50 transition-all border border-gray-200"
             >
               Talk to an AI
@@ -118,11 +118,11 @@ export default function Home() {
                   for a single platform where everything works together seamlessly.
                 </p>
                 <Link
-                  href="/why"
+                  href="/coming-soon"
                   className="inline-flex items-center px-8 py-3 rounded-full text-lg font-medium bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white hover:opacity-90 transition-all group"
                 >
                   Learn why this is the most important thing in the world
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
                 </Link>
               </div>
               <div className="flex-1">
@@ -372,7 +372,7 @@ export default function Home() {
                   className="inline-flex items-center px-6 py-3 mt-8 rounded-full text-lg font-medium border border-purple-200 hover:border-purple-300 hover:bg-purple-50 transition-all group"
                 >
                   Browse all libraries
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
                 </Link>
               </div>
 
@@ -488,7 +488,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                 className="inline-flex items-center px-6 py-3 rounded-full text-lg font-medium bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white hover:opacity-90 transition-all group"
               >
                 View more examples
-                <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
               </Link>
             </div>
           </div>
@@ -611,7 +611,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                   className="inline-flex items-center px-6 py-3 rounded-full text-lg font-medium bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white hover:opacity-90 transition-all group"
                 >
                   Star us on VibeHub
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
                 </Link>
               </div>
             </div>
@@ -725,7 +725,7 @@ if (vibehog.isFeatureEnabled('new_dashboard')) {
                       className="inline-flex items-center px-6 py-3 rounded-full text-lg font-medium bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white hover:opacity-90 transition-all group"
                     >
                       Learn more
-                      <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                      <span className="ml-2 group-hover:translate-x-1 transition-transform">›</span>
                     </Link>
                   </div>
                 </div>
