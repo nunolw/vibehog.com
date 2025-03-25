@@ -37,7 +37,7 @@ export default function Home() {
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-600 bg-clip-text text-transparent">products that people want</span>
           </h1>
           <p className="text-2xl text-gray-600 mb-16">
-            The single platform to analyze, test, observe and deploy new features. Get product-market fit faster.
+            The single platform to vibe, analyze, test, observe and deploy new features
           </p>
           <div className="flex justify-center gap-6 mb-48">
             <Link
@@ -70,8 +70,7 @@ export default function Home() {
                   </span>
                 </h2>
                 <p className="text-2xl text-gray-600 mb-8 max-w-2xl">
-                  Product analytics has never been so intuitive. Trade in your scattered tools & data stack 
-                  for a single platform where everything works together seamlessly.
+                  Say goodbye to ductaping 10 analytics tool and infinite tabs, Vibehog does it all
                 </p>
                 <Link
                   href="/coming-soon"
@@ -248,22 +247,22 @@ export default function Home() {
           {/* Content */}
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-center mb-20 text-black whitespace-nowrap">
-              These folks <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">build products users want</span> with VibeHog
+              These folks <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">build products users want</span> with Vibehog
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                'Y Combinator',
-                'Mistral AI',
-                '11ElevenLabs',
-                'Raycast',
-                'Airbus',
-                'DHL',
-                'StartEngine',
-                'AssemblyAI',
-                'Hasura',
-                'Trust',
-                'ResearchGate',
-                'PostHog'
+                'Y Vibinator',
+                'Mister AI',
+                'EnenenLabs',
+                'Rayblast',
+                'Airboss',
+                'DFL',
+                'StartTheEngine',
+                'AssembleAI',
+                'Azura',
+                'Thrust',
+                'ResearchDoor',
+                'PreHog'
               ].map((company) => (
                 <div
                   key={company}
@@ -291,8 +290,8 @@ export default function Home() {
               </span>{' '}
               fast
             </h2>
-            <p className="text-xl text-gray-600 mb-12">
-              We started yesterday and we've shipped 10+ products since then. Currently at $200M ARR and growing faster than our memes.
+            <p className="text-xl text-gray-600 mb-12 text-center">
+              We started yesterday and we've shipped 10+ products since then
             </p>
 
             {/* Timeline */}
@@ -305,32 +304,32 @@ export default function Home() {
                 {[
                   {
                     date: 'Yesterday',
-                    title: 'Founded VibeHog',
-                    description: 'Started with a simple idea: analytics should spark joy',
+                    title: 'Founded Vibehog',
+                    description: 'Started with a simple idea: a simple idea',
                     gradient: 'from-indigo-600 to-purple-600'
                   },
                   {
                     date: 'This Morning',
                     title: 'Launched on Product Hunt',
-                    description: '10,000 upvotes in the first hour. The vibe was immaculate.',
+                    description: '10,000 upvotes in the first hour, much wow',
                     gradient: 'from-purple-600 to-pink-500'
                   },
                   {
                     date: 'Lunchtime',
                     title: 'Hit $100M ARR',
-                    description: 'Turns out people really like analytics that don&apos;t make them cry.',
+                    description: 'Turns out people really like analytics that do not make them cry',
                     gradient: 'from-pink-500 to-indigo-600'
                   },
                   {
                     date: 'Tea Time',
                     title: 'Series Z Funding',
-                    description: 'Raised $420M at $69B valuation. Nice.',
+                    description: 'Raised $1T at infinite valuation',
                     gradient: 'from-indigo-600 to-purple-600'
                   },
                   {
                     date: 'Just Now',
                     title: '$200M ARR',
-                    description: 'Double the revenue, double the vibes. Still having fun!',
+                    description: 'Fastest growing Hog owned company!',
                     gradient: 'from-purple-600 to-pink-500'
                   }
                 ].map((event, index) => (
@@ -372,7 +371,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-5xl font-bold mb-16 text-center text-black">
               <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">WARNING:</span>
-              {' '}You'll hate VibeHog if...
+              {' '}You'll hate Vibehog if...
             </h2>
             
             {/* Slider container */}
@@ -382,31 +381,31 @@ export default function Home() {
                   {
                     bg: 'bg-gradient-to-br from-white to-purple-50 border-purple-100',
                     title: "You like to find PMF slowly",
-                    description: "VibeHog will help you find it fast, use with caution.",
+                    description: "Vibehog will help you find it fast, use with caution. With great power comes great reshogsibility",
                     image: "/slow.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-pink-50 border-pink-100',
                     title: "You love opening 10 tabs instead of one",
-                    description: "VibeHog does web analytics, product insights, session replays, and more — all in one tab.",
+                    description: "Vibehog does web analytics, product insights, session replays, and coffee, all in one",
                     image: "/tabs.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-indigo-50 border-indigo-100',
                     title: "You collect analytics tools like NFTs",
-                    description: "No need to hire consultants to setup mixpanel, google analytics, amplitude and 1000 more tools. VibeHog takes one minute to set up, by you.",
+                    description: "No need to hire consultants to setup mixpanel, google analytics, amplitude and 1000 more tools. Vibehog takes one minute to set up, by you",
                     image: "/nfts.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-purple-50 border-purple-100',
                     title: "You're a part-time data sherlock holmes",
-                    description: "You don't need to decipher a thousand plots to know what your customers want like they are ancient scrolls, VibeHog does everything for you.",
+                    description: "You don't need to decipher a thousand plots to know what your customers want like they are ancient scrolls, Vibehog does everything for you",
                     image: "/sherlock.jpg"
                   },
                   {
                     bg: 'bg-gradient-to-br from-white to-pink-50 border-pink-100',
                     title: "You like complex and long setups",
-                    description: "Our setup is so simple it might hurt your feelings. One line of code and you're done.",
+                    description: "Our setup is so simple it might hurt your feelings",
                     image: "/complex.jpg"
                   }
                 ].map((warning, index) => (
@@ -458,11 +457,11 @@ export default function Home() {
                 <span className="text-black"> Open Source</span>
               </h2>
               <p className="text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
-                VibeHog is (mostly) open source and will always be.
-                Join our community of developers building the future of product analytics.
+                Vibehog is (mostly) open source and will always be!
+                Join our community of developers building the future of the future
               </p>
               <p className="text-md text-gray-500 mb-12 max-w-2xl mx-auto italic">
-                We keep 0.001% closed source because we believe in responsible deployment of extremely simple to use analytics tools that enable fast product market fit, please regulate us
+                We keep 0.01% closed source because we deeply believe in responsible deployment of extremely simple to use analytics tools that enable hypersonic product market fit and think that others my deploy it irresponsibly (please regulate us)
               </p>
               <div className="flex justify-center gap-8">
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 text-center shadow-sm">
@@ -509,7 +508,7 @@ export default function Home() {
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Product OS</Link></li>
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Data connections</Link></li>
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Customer stories</Link></li>
-                  <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">VibeHog vs...</Link></li>
+                  <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Vibehog vs...</Link></li>
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">For startups</Link></li>
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Pricing</Link></li>
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">How we do &quot;sales&quot;</Link></li>
@@ -560,8 +559,8 @@ export default function Home() {
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Merch</Link></li>
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Contributors</Link></li>
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Newsletter</Link></li>
-                  <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">VibeHog FM</Link></li>
-                  <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">VibeHog on GitHub</Link></li>
+                  <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Vibehog FM</Link></li>
+                  <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Vibehog on GitHub</Link></li>
                   <li><Link href="/coming-soon" className="text-gray-600 hover:text-purple-600">Cool tech jobs</Link></li>
                 </ul>
               </div>
@@ -589,7 +588,7 @@ export default function Home() {
             {/* Bottom section */}
             <div className="mt-16 pt-8 pb-0 border-t border-gray-200">
               <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-0">
-                <div className="text-sm text-gray-600">© 2024 VibeHog, Inc.</div>
+                <div className="text-sm text-gray-600">© 2024 Vibehog, Inc.</div>
                 
                 {/* Social links */}
                 <div className="flex items-center gap-6">
