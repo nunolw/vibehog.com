@@ -461,7 +461,7 @@ export default function Home() {
                 Join our community of developers building the future of the future
               </p>
               <p className="text-md text-gray-500 mb-12 max-w-2xl mx-auto italic">
-                We keep 0.01% closed source because we deeply believe in responsible deployment of extremely simple to use analytics tools that enable hypersonic product market fit and think that others my deploy it irresponsibly (please regulate us)
+                We keep 0.01% closed source because we deeply believe in responsible deployment of extremely simple to use analytics tools that enable hypersonic product market fit and think that others might deploy it irresponsibly (please regulate us)
               </p>
               <div className="flex justify-center gap-8">
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 text-center shadow-sm">
