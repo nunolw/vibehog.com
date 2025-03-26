@@ -1,5 +1,6 @@
 'use client'
 
+// Updated repository for new GitHub username: yeslightway - rebuilding site
 import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
@@ -416,7 +417,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent leading-tight">{warning.title}</h3>
                       <div className="mb-6 overflow-hidden rounded-lg">
-          <Image
+            <Image
                           src={warning.image}
                           alt={warning.title}
                           width={48}
